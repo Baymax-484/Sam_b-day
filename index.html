@@ -4,40 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            font-family: Luminari, fantasy;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2em;
+        }
+        .bday {
+            width: 50%;
+            float: left;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .invite h3 {
+            text-align: center;
+            font-size: 1.5em;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            text-align: center;
+            font-size: 1em;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .bday {
+                width: 100%;
+                float: none;
+                padding: 0;
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            .invite h3 {
+                font-size: 1.2em;
+            }
+            li {
+                font-size: 0.9em;
+            }
+        }
+    </style>
 </head>
-<style>
-    * {
-        font-family: Luminari, fantasy;
-    }
-    div.bday {
-        width: 50%;
-        float: left;
-    }
-    ul {
-        display: flex;
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
-        list-style-type: none; 
-        padding: 0;
-    }
-    li {
-        text-align: center;
-    }
-</style>
 <body>
-    <img src="poo.jpg" height="300px" width="100%">
-    <h1 style="text-align: center;">WELCOME TO SAMMY POOPY PARTY</h1>
+    <img src="poo.jpg" alt="Banner Image" height="300px" width="100%">
+    <h1>WELCOME TO SAMMY POOPY PARTY</h1>
     <div width="100%">
         <div class="bday" align="center">
-            <img src="sammy.jpg" width="600px" height="300px">
+            <img src="sammy.jpg" alt="Sammy" width="600px" height="300px">
         </div>
         <div class="bday" align="center">
             <iframe src="https://giphy.com/embed/Kr9ePsDpyNOuzg0Kta" width="300" height="300" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
             <p><a href="https://giphy.com/gifs/drink-drinks-happy-hour-Kr9ePsDpyNOuzg0Kta"></a></p>
         </div>
         <div class="invite">
-            <h3 style="text-align: center;">You are cordially invited to Sameera's Birthday Farty</h3>
+            <h3>You are cordially invited to Sameera's Birthday Farty</h3>
             <ul>
                 <li><b>CUTIE-PIE SAM AKA SAMEERA</b></li>
                 <li>SHORTY AKA ASWIN</li>
